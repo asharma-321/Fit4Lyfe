@@ -1,0 +1,18 @@
+body{
+  background-color: Lavender !important;
+}
+#jams{
+  text-align: left;
+  font-size: medium;
+  font-family:monospace;
+}
+
+#mission{
+  text-align-last: center;
+}
+#head{
+  text-align: center;
+  color: DarkViolet;
+  
+  background-image: url("hex.jpg") !important;
+}
