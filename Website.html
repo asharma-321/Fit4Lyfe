@@ -2,11 +2,12 @@
 <html>
  <head>
    <title>Tina </title>
+
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
- <link rel="stylesheet" href="website.css">
+   <link rel="stylesheet" href="website.css">
 
     <style>
       .carousel {
@@ -14,11 +15,18 @@
         width: 800px;
       }
       </style>
-
+      <!-- for navbar merge -->
+   <script src= "mergecode.js"></script>
+   <!-- for navbar merge -->
  </head>
  <body>
+   <!-- for navbar merge -->
+   <div id = "navbar" w3-include-html="navbar.html"></div>
+<!-- for navbar merge -->
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-       <a class="navbar-brand" href="Website.html"><img src="circle.png"Height="70" Width= "190"></a>
+       <a class="navbar-brand" href="Website.html">
+         <img src = "four.png">
+       </a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
        </button>
@@ -42,10 +50,8 @@
          </ul>
        </div>
      </nav>
-<h1>
 
-  <h1 id = "home">HOME </h1>
-  </h1>
+  <h1 id = "head">HOME </h1>
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -54,13 +60,16 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="yoga.jpg"alt="First slide" Height = "400">
+            <img class="d-block w-100" src="yoga.jpg" alt="First slide" height = "400">
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="fruit.jpg" alt="Second slide" Height = "400">
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="blue.jpg" alt="Third slide" Height = "400">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="junk.png" alt="Fourth slide" Height = "400">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -72,7 +81,11 @@
           <span class="sr-only">Next</span>
         </a>
     </div>
-
+    <!-- for navbar merge -->
+    <script>
+    includeHTML();
+    </script>
+    <!-- for navbar merge -->
 
  </body>
 </html>
