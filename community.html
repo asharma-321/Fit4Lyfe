@@ -5,6 +5,7 @@
     <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" />
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
      <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+     <script src = "style.js"></script>
 
      <!-- for navbar merge -->
          <script src= "mergecode.js"></script>
@@ -15,13 +16,27 @@
     <!-- for navbar merge -->
     <div id = "navbar" w3-include-html="navbar.html"></div>
     <!-- for navbar merge -->
-    <h1 id = "title">Community</h1>
+    <h1 id = "head">Community</h1>
 
     <div id = "forum">
-      <form action="demo_form.asp">
-        Comments: <input type="text" name="fname"><br>
-        <input type="submit" value="Submit">
+      <form onsubmit="addcomment()">
+        Name: <input type="text" id="username" name="name"><br>
+        Comments: <input type="text" id = "usercomment" name="comment"><br>
+      <!--  <input type="submit" value="Submit"> -->
       </form>
     </div>
+
+    <button onclick="addcomment()">Submit Comment</button>
+
+    <p id = "usernameoutput"></p>
+    <p id = "usercommentoutput"></p>
+
+    <a href = "#" id = "get-data">Show Comments</a>
+    <div id = "show-data"></div>
+    <!-- for navbar merge -->
+    <script>
+    includeHTML();
+    </script>
+    <!-- for navbar merge -->
   </body>
 </html>
