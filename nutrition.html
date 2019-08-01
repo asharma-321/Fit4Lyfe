@@ -2,6 +2,7 @@
 <html>
 <head>
   <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="website.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 
@@ -15,6 +16,47 @@
   <div id = "navbar" w3-include-html="navbar.html"></div>
   <!-- for navbar merge -->
 
+  <h1 id = "head"> NUTRITION </h1>
+
+  <div class="tab">
+       <button class="tablinks" onclick="openCity(event, 'mealPlan')" id="defaultOpen">Meal Planning</button>
+       <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+       <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+     </div>
+
+     <div id="mealPlan" class="tabcontent">
+       <h3>Meal PLanning</h3>
+       <p>London is the capital city of England.</p>
+     </div>
+
+     <div id="Paris" class="tabcontent">
+       <h3>Paris</h3>
+       <p>Paris is the capital of France.</p>
+     </div>
+
+     <div id="Tokyo" class="tabcontent">
+       <h3>Tokyo</h3>
+       <p>Tokyo is the capital of Japan.</p>
+     </div>
+
+     <script>
+     function openCity(evt, cityName) {
+       var i, tabcontent, tablinks;
+       tabcontent = document.getElementsByClassName("tabcontent");
+       for (i = 0; i < tabcontent.length; i++) {
+         tabcontent[i].style.display = "none";
+       }
+       tablinks = document.getElementsByClassName("tablinks");
+       for (i = 0; i < tablinks.length; i++) {
+         tablinks[i].className = tablinks[i].className.replace(" active", "");
+       }
+       document.getElementById(cityName).style.display = "block";
+       evt.currentTarget.className += " active";
+     }
+
+     // Get the element with id="defaultOpen" and click on it
+     document.getElementById("defaultOpen").click();
+     </script>
 
   <!-- for navbar merge -->
   <script>
