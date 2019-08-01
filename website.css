@@ -16,6 +16,10 @@ body{
 
   background-image: url("hex.jpg") !important;
 }
+#info{
+  text-align: center;
+  
+}
 
 * {box-sizing: border-box}
 
