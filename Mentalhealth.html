@@ -5,7 +5,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
   <link rel ="stylesheet" href ="website.css">
-
+  <style>
+  .tabh{
+    margin-left: 40px;
+  }
+  .center-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+   </style>
   <!-- for navbar merge -->
       <script src= "mergecode.js"></script>
       <!-- for navbar merge -->
@@ -15,6 +24,45 @@
   <!-- for navbar merge -->
   <div id = "navbar" w3-include-html="navbar.html"></div>
   <!-- for navbar merge -->
+
+  <div class="tab">
+       <button class="tablinks" onclick="openCity(event, 'therapy')" id="defaultOpen">Types of Therapy</button>
+       <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+       <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+     </div>
+     <div id="therapy" class="tabcontent">
+       <h2>Types of Therapy</h2>
+       <h4 class = "tabh">Hypotherapy</h4>
+       <p class = "tabh">Hypnosis is thought to work by altering our state of consciousness in such a way that the analytical left-hand side of the brain is turned off, while the non-analytical right-hand side is made more alert. The conscious control of the mind is inhibited, and the subconscious mind awoken. It is a guided way to help a perspn relax so they are able to slowly relieve there stress. It's also a therapy that helps break bad habits and stricly stays away from medication.</p>
+       <img src = "hypotherapy.jpg" class="center-pic" Height = "250" Width = "400"/>
+       <h4 class = "tabh">Interpersonal Therapy</h4>
+       <p class = "tabh">This type of therapy focuses on strengthening and learning how to build relationships with your family and peers.Its an indivual talk therapy where you discuss your stress and weaknesses so sit could help one build there self esteem and strengthen there mental health.</p>
+       <img src = "interpersonaltherapy.jpg" class ="center-pic" Height = "250" Width "800"/>
+     <div id="Paris" class="tabcontent">
+       <h3>Paris</h3>
+       <p>Paris is the capital of France.</p>
+     </div>
+     <div id="Tokyo" class="tabcontent">
+       <h3>Tokyo</h3>
+       <p>Tokyo is the capital of Japan.</p>
+     </div>
+     <script>
+     function openCity(evt, cityName) {
+       var i, tabcontent, tablinks;
+       tabcontent = document.getElementsByClassName("tabcontent");
+       for (i = 0; i < tabcontent.length; i++) {
+         tabcontent[i].style.display = "none";
+       }
+       tablinks = document.getElementsByClassName("tablinks");
+       for (i = 0; i < tablinks.length; i++) {
+         tablinks[i].className = tablinks[i].className.replace(" active", "");
+       }
+       document.getElementById(cityName).style.display = "block";
+       evt.currentTarget.className += " active";
+     }
+     // Get the element with id="defaultOpen" and click on it
+     document.getElementById("defaultOpen").click();
+     </script>
 
   <!-- for navbar merge -->
   <script>
