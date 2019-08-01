@@ -28,45 +28,57 @@
 <h1 id = "head"> FITNESS </h1>
 
 
-    <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
-      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-    </div>
+<div class="tab">
+ <button class="tablinks" onclick="openCity(event, 'busy')" id="defaultOpen"><strong>How To Stay Active With A Busy Schedule</strong></button>
+ <button class="tablinks" onclick="openCity(event, 'office')"><strong>How To Workout With An Office Job</strong></button>
+ <button class="tablinks" onclick="openCity(event, 'core')"><strong>Core Exercises</strong></button>
+ <button class="tablinks" onclick="openCity(event, 'arms')"><strong>Arm Exercises</strong></button>
+ <button class="tablinks" onclick="openCity(event, 'back')"><strong>Back Exercises</strong></button>
+ <button class="tablinks" onclick="openCity(event, 'legs')"><strong>Leg Exercises</strong></button>
+</div>
 
-    <div id="London" class="tabcontent">
-      <h3>London</h3>
-      <p>London is the capital city of England.</p>
-    </div>
+<div id="busy" class="tabcontent">
+ <p>London is the capital city of England.</p>
+</div>
 
-    <div id="Paris" class="tabcontent">
-      <h3>Paris</h3>
-      <p>Paris is the capital of France.</p>
-    </div>
+<div id="office" class="tabcontent">
+ <p>Paris is the capital of France.</p>
+</div>
 
-    <div id="Tokyo" class="tabcontent">
-      <h3>Tokyo</h3>
-      <p>Tokyo is the capital of Japan.</p>
-    </div>
+<div id="core" class="tabcontent">
+ <p>Tokyo is the capital of Japan.</p>
+</div>
 
-    <script>
-    function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
+<div id="arms" class="tabcontent">
+ <p>London is the capital city of England.</p>
+</div>
 
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-    </script>
+<div id="back" class="tabcontent">
+ <p>London is the capital city of England.</p>
+</div>
+
+<div id="legs" class="tabcontent">
+ <p>London is the capital city of England.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+ var i, tabcontent, tablinks;
+ tabcontent = document.getElementsByClassName("tabcontent");
+ for (i = 0; i < tabcontent.length; i++) {
+   tabcontent[i].style.display = "none";
+ }
+ tablinks = document.getElementsByClassName("tablinks");
+ for (i = 0; i < tablinks.length; i++) {
+   tablinks[i].className = tablinks[i].className.replace(" active", "");
+ }
+ document.getElementById(cityName).style.display = "block";
+ evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 
 
 
