@@ -31,7 +31,7 @@ body{
   border: 1px solid #ccc;
   background-image: url("hex.jpg");
   width: 17%;
-  min-height: 1500px;
+  min-height: 5000px;
 }
 
 /* Style the buttons that are used to open the tab content */
