@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link rel = "stylesheet" href = "website.css">
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+     <script src = "style.js"></script>
+
+     <!-- for navbar merge -->
+         <script src= "mergecode.js"></script>
+         <!-- for navbar merge -->
+
+  </head>
+  <body>
+    <!-- for navbar merge -->
+    <div id = "navbar" w3-include-html="navbar.html"></div>
+    <!-- for navbar merge -->
+    <h1 id = "head">Community</h1>
+
+    <div id = "forum">
+      <form onsubmit="addcomment()" method="post" action="/">
+        Name: <input type="text" id="username" name="username"><br>
+        Comments: <textarea type="text" id = "usercomment" name="usercomment"></textarea>
+      <input type="submit" value="OK">
+      </form>
+    </div>
+
+    <button onclick="addcomment()">Submit Comment</button>
+
+    <h2>comments</h2>
+    <div id = "show-data"></div>
+    <!-- for navbar merge -->
+    <script>
+    includeHTML();
+    </script>
+    <!-- for navbar merge -->
+  </body>
+</html>

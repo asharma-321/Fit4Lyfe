@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-1.11.0.min.js"
+
+
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="website.css">
+
+
+<!-- for navbar merge -->
+    <script src= "mergecode.js"></script>
+    <!-- for navbar merge -->
+
+
+
+   </head>
+  <body>
+
+    <!-- for navbar merge -->
+    <div id = "navbar" w3-include-html="navbar.html"></div>
+    <!-- for navbar merge -->
+
+<h1 id = "head"> FITNESS </h1>
+
+
+<div class="tab">
+ <button class="tablinks" onclick="openCity(event, 'busy')" id="defaultOpen"><strong>How To Stay Active With A Busy Schedule</strong></button>
+ <button class="tablinks" onclick="openCity(event, 'office')"><strong>How To Workout With An Office Job</strong></button>
+ <button class="tablinks" onclick="openCity(event, 'core')"><strong>Core Exercises</strong></button>
+ <button class="tablinks" onclick="openCity(event, 'arms')"><strong>Arm Exercises</strong></button>
+ <button class="tablinks" onclick="openCity(event, 'back')"><strong>Back Exercises</strong></button>
+ <button class="tablinks" onclick="openCity(event, 'legs')"><strong>Leg Exercises</strong></button>
+</div>
+
+<div id="busy" class="tabcontent">
+ <p>London is the capital city of England.</p>
+</div>
+
+<div id="office" class="tabcontent">
+ <p>Paris is the capital of France.</p>
+</div>
+
+<div id="core" class="tabcontent">
+ <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="arms" class="tabcontent">
+ <p>London is the capital city of England.</p>
+</div>
+
+<div id="back" class="tabcontent">
+ <p>London is the capital city of England.</p>
+</div>
+
+<div id="legs" class="tabcontent">
+ <p>London is the capital city of England.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+ var i, tabcontent, tablinks;
+ tabcontent = document.getElementsByClassName("tabcontent");
+ for (i = 0; i < tabcontent.length; i++) {
+   tabcontent[i].style.display = "none";
+ }
+ tablinks = document.getElementsByClassName("tablinks");
+ for (i = 0; i < tablinks.length; i++) {
+   tablinks[i].className = tablinks[i].className.replace(" active", "");
+ }
+ document.getElementById(cityName).style.display = "block";
+ evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+<!-- for navbar merge -->
+<script>
+includeHTML();
+</script>
+<!-- for navbar merge -->
+
+  </body>
+</html>

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <link rel = "stylesheet" href = "website.css">
-    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Community</title>
+     <link rel = "stylesheet" href = "website.css" type="text/css">
+    <link href="bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+     <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js" ></script>
      <script src = "style.js"></script>
 
      <!-- for navbar merge -->
@@ -19,19 +20,15 @@
     <h1 id = "head">Community</h1>
 
     <div id = "forum">
-      <form onsubmit="addcomment()">
-        Name: <input type="text" id="username" name="name"><br>
-        Comments: <input type="text" id = "usercomment" name="comment"><br>
-      <!--  <input type="submit" value="Submit"> -->
+      <form method="post" action="/">
+        Name: <input type="text" id="username" name="username"><br>
+        Comments: <textarea type="text" id = "usercomment" name="usercomment"></textarea>
+      <input type="submit" value="OK">
       </form>
     </div>
 
-    <button onclick="addcomment()">Submit Comment</button>
 
-    <p id = "usernameoutput"></p>
-    <p id = "usercommentoutput"></p>
-
-    <a href = "#" id = "get-data">Show Comments</a>
+    <h2>comments</h2>
     <div id = "show-data"></div>
     <!-- for navbar merge -->
     <script>
