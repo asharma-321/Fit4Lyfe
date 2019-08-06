@@ -23,6 +23,7 @@ body{
 
 
 
+
 * {box-sizing: border-box}
 
 /* Style the tab */
@@ -31,7 +32,7 @@ body{
   border: 1px solid #ccc;
   background-image: url("hex.jpg");
   width: 17%;
-  min-height: 5000px;
+  min-height: 7000px;
 }
 
 /* Style the buttons that are used to open the tab content */
