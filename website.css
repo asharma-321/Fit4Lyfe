@@ -20,6 +20,10 @@ body{
   text-align: center;
 
 }
+#caption{
+  text-align:right;
+  text-align-last: right;
+}
 
 
 
