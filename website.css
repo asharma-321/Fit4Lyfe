@@ -67,3 +67,7 @@ body{
   border-left: none;
   height: 100%;
 }
+
+.upright {
+  image-orientation: from-image;
+}
